@@ -1,0 +1,94 @@
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+  body {
+      text-align: center;
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 60px;
+      font-style: oblique;
+      font-variant: small-caps;
+      color: rgb(21, 43, 61);
+  }
+  sup{
+    font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      font-style: oblique;
+      color: rgb(21, 43, 61);
+  }
+  .poem{
+    font-family: 'Times New Roman', Times, serif;
+      font-size: 30px;
+      color: rgb(21, 43, 61);
+  }
+  
+  .images-selector input {
+    position: absolute;
+    z-index: 10;
+  }
+  
+  .images-selector input:checked + .img-card {
+    filter: none;
+    transform: scaleY(1);
+  }
+  
+  .img-card {
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+    filter: grayscale(1) opacity(.8);
+  }
+  
+  .img-card:hover {
+    filter: grayscale(0) opacity(1);
+  /*   box-shadow:  0px 8px 4px rgba(0, 0, 0, 0.3),
+                 0px 10px 2px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .img-card::before,
+  .img-card::after {
+    transform: scaleY(-1);
+  }
+  
+  
+  .img1 {
+    background-image: url(https://images.unsplash.com/photo-1442689859438-97407280183f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+  
+  .img2 {
+    background-image: url(https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+  
+  .img3 {
+    background-image: url(https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+  
+  .img4 {
+    background-image: url(https://images.unsplash.com/photo-1549488235-42996ae3b650?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+  }
+  p{
+      font-size: 20px;
+      color: rgb(216, 243, 239);
+  }
